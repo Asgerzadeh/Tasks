@@ -1,12 +1,13 @@
-// Task 2
 let elementH1 = document.querySelector("h1")
-elementH1.innerText = "Series"
-console.log(elementH1);
+elementH1.remove();
 
+let body = document.querySelector("body")
+let script = document.querySelector("script")
 
-let ClassPrimary = document.querySelector(".primary")
- ClassPrimary.style.background = "teal"
-
+let ListText = document.querySelector("li")
+ListText.textContent = "RTX3000";
+body.insertBefore(ListText, script)
+console.log(ListText);
 
 
 
