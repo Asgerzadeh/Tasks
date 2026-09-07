@@ -1,14 +1,11 @@
-let elementH1 = document.querySelector("h1")
-elementH1.remove();
-
-let body = document.querySelector("body")
-let script = document.querySelector("script")
-
-let ListText = document.querySelector("li")
-ListText.textContent = "RTX3000";
-body.insertBefore(ListText, script)
-console.log(ListText);
-
+let list = document.querySelectorAll("li");
+list.forEach(element => {
+    element.classList.add('item')
+    if (element.classList.contains("primary") == false){
+                element.classList.add("secondary")
+    }
+});
+console.log(list);
 
 
 
