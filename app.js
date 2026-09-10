@@ -1,15 +1,9 @@
-let list = document.querySelectorAll("li");
-list.forEach(element => {
-    element.classList.add('item')
-    if (element.classList.contains("primary") == false){
-                element.classList.add("secondary")
-    }
-});
-console.log(list);
 
+document.addEventListener("keyup", (e)=> {
+    if (e.key == "Enter")
+        console.log('ENTER');
 
-
-
+})
 
 
 
